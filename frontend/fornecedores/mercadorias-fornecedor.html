@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercadorias do Fornecedor</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onload="listarMercadoriasDoFornecedor()">
+
+<header>
+  <h1>Mercadorias do Fornecedor</h1>
+  <nav>
+    <a href="listar-fornecedores.html">Voltar</a>
+  </nav>
+</header>
+
+<main>
+  <h2 id="nomeFornecedor"></h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mercadoria</th>
+        <th>Descrição</th>
+        <th>Validade</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaMercadoriasFornecedor"></tbody>
+  </table>
+</main>
+
+<script src="../js/fornecedores.js"></script>
+</body>
+</html>

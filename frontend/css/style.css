@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #0b4f6c, #01baef);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px #0002;
+  text-align: center;
+}
+
+.card h2 {
+  color: #0b4f6c;
+}
+
+.card a,
+button {
+  background: #0b4f6c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+.card a:hover {
+  background: #01baef;
+}
+
+form {
+  background: white;
+  max-width: 550px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px #0002;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px #0002;
+}
+
+th {
+  background: #0b4f6c;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.btn-editar {
+  background: #f0ad4e;
+}
+
+.btn-excluir {
+  background: #d9534f;
+}
+
+.btn-ver {
+  background: #5cb85c;
+}
+
+.login-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0b4f6c, #01baef);
+}
+
+.login-container {
+  background: white;
+  width: 350px;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 20px #0004;
+}
+
+.login-container h1 {
+  color: #0b4f6c;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
