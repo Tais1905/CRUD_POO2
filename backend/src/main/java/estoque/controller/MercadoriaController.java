@@ -1,4 +1,6 @@
-package com.example.AnimalAula.controller;
+package estoque.controller;
+
+import java.util.List;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,12 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.AnimalAula.model.Mercadoria;
-import com.example.AnimalAula.service.MercadoriaService;
+import estoque.model.Mercadoria;
+import estoque.service.MercadoriaService;
 
 
-
-@CrossOrigin(origins = "https://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/mercadorias")
 public class MercadoriaController {
@@ -26,27 +27,25 @@ public class MercadoriaController {
         this.service = service;
     }
 
-    @PostMapping
-    public Mercadoria criar(@RequestBody Mercadoria mercadoria){
-        return service.salvar(mercadoria);
+    @GetMapping
+    public List<Mercadoria> listar() {
+        return service.listar();
     }
 
-    @GetMapping("path")
-    public String getMethodName(@RequestParam String param) {
-        return new String();
+    @GetMapping("/{id}")
+    public Mercadoria buscarPorId(@PathVariable Long id) {
+        return service.buscarPorId(id);
     }
 
-    @PutMapping("path/{id}")
-    public String putMethodName(@PathVariable String id, @RequestBody String entity) {
-        //TODO: process PUT request
+    @PutMapping("/{id}")
+    public Mercadoria editar(@PathVariable Long id,
+                            @RequestBody Mercadoria mercadoria) {
+        return service.editar(id, mercadoria);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletar(@PathVariable Long id) {
+        service.deletar(id);
+    }
         
-        return entity;
-    }
-    
-    @DeleteMapping("path/{id}")
-    public String deleteMethodName(@PathVariable String id) {
-        //TODO: process DELETE request
-        return new String();
-    }
-    
 }

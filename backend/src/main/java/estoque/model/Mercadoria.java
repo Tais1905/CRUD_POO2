@@ -1,4 +1,4 @@
-package com.example.AnimalAula.model;
+package estoque.model;
 
 import java.time.LocalDate;
 
