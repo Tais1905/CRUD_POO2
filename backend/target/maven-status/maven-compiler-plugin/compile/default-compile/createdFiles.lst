@@ -1,0 +1,13 @@
+com/example/AnimalAula/service/FornecedorService.class
+com/example/AnimalAula/controller/MercadoriaController.class
+com/example/AnimalAula/controller/FornecedorController.class
+com/example/AnimalAula/repository/UsuarioRepository.class
+com/example/AnimalAula/model/Usuario.class
+com/example/AnimalAula/model/Mercadoria.class
+com/example/AnimalAula/SistemaEstoqueApplication.class
+com/example/AnimalAula/repository/FornecedorRepository.class
+com/example/AnimalAula/controller/LoginController.class
+com/example/AnimalAula/service/MercadoriaService.class
+com/example/AnimalAula/repository/MercadoriaRepository.class
+com/example/AnimalAula/service/LoginService.class
+com/example/AnimalAula/model/Fornecedor.class
