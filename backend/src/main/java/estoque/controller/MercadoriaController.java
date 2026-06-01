@@ -17,7 +17,7 @@ import estoque.model.Mercadoria;
 import estoque.service.MercadoriaService;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/mercadorias")
 public class MercadoriaController {
@@ -25,6 +25,11 @@ public class MercadoriaController {
 
     public MercadoriaController(MercadoriaService service){
         this.service = service;
+    }
+
+    @PostMapping
+    public Mercadoria criar(@RequestBody Mercadoria mercadoria) {
+        return service.salvar(mercadoria);
     }
 
     @GetMapping
